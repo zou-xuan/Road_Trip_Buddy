@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trip Buddy</string>
+    <string name="title">Road Trip Buddy</string>
+    <string name="title_activity_game">GameActivity</string>
+</resources>
