@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/background"
+    android:background="@drawable/background_blur2"
 
     tools:context="edu.berkeley.zouxuan.tripbuddy.MainActivity">
 
@@ -28,23 +28,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="300dp">
+        android:paddingTop="600px">
         <ImageButton
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="40px"
-            android:layout_marginRight="40dp"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
             android:id="@+id/game_button"
             android:background="@drawable/buttonxml"/>
         <ImageButton
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginRight="40dp"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_gravity="center_horizontal"
+
             android:id="@+id/alarm_button"
             android:background="@drawable/buttonxml"/>
         <ImageButton
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginRight="40px"
             android:id="@+id/history_button"
             android:background="@drawable/buttonxml"/>
     </LinearLayout>

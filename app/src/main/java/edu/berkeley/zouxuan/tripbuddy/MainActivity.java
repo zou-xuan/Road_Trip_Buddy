@@ -33,5 +33,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(t);
             }
         });
+        alarm_button.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(MainActivity.this,AlarmActivity.class);
+                startActivity(t);
+            }
+        });
+        history_button.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(MainActivity.this,HistoryActivity.class);
+                startActivity(t);
+            }
+        });
+
     }
 }

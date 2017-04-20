@@ -8,14 +8,46 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.berkeley.zouxuan.tripbuddy.GameActivity">
+    tools:context="edu.berkeley.zouxuan.tripbuddy.GameActivity"
+    android:background="@drawable/background_blur2">
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Game!"/>
+        android:layout_height="wrap_content"
+        android:paddingTop="100px">
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:id="@+id/game_category"
+            android:background="@drawable/buttonxml"/>
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/game_rhythm"
+            android:background="@drawable/buttonxml"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="300px">
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:id="@+id/game_knowledge"
+            android:background="@drawable/buttonxml"/>
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/game_more"
+            android:background="@drawable/buttonxml"/>
     </LinearLayout>
 
 </RelativeLayout>
