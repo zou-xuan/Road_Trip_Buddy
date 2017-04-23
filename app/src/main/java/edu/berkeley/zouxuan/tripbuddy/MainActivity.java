@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         titleview=(ImageView)findViewById(R.id.titleview);
-        titleview.setImageResource(R.drawable.title);
+        titleview.setImageResource(R.drawable.logo);
 
         game_button=(ImageButton)findViewById(R.id.game_button);
         alarm_button=(ImageButton)findViewById(R.id.alarm_button);
