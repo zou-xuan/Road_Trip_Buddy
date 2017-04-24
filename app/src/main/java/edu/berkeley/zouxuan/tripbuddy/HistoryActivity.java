@@ -28,9 +28,9 @@ public class HistoryActivity extends AppCompatActivity {
 
     private ArrayList<HistoryData> getDataSet() {
         ArrayList<HistoryData> list = new ArrayList<>();
-        list.add(new HistoryData(R.drawable.button, "First", "content..."));
-        list.add(new HistoryData(R.drawable.button, "Second", "content..."));
-        list.add(new HistoryData(R.drawable.button, "Third", "content..."));
+        list.add(new HistoryData(R.drawable.game_icon, "Game Score", "You got a score of 5 in nba team name category."));
+        list.add(new HistoryData(R.drawable.alarm_icon, "Alarm Reaction", "Your reaction time is 10 seconds. You need a rest. :("));
+        list.add(new HistoryData(R.drawable.game_icon, "Game Score", "You beat road trip game in multiple choice game."));
         return list;
     }
 }

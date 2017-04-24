@@ -22,13 +22,15 @@
         android:indeterminate="false" />
 
     <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:paddingLeft="100dp"
+        android:paddingTop="20dp"
         android:id="@+id/imageView"
-        android:layout_below="@+id/timerSeekBar"
+        android:layout_below="@+id/timerTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/sun" />
+        android:src="@drawable/clock" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,7 +46,7 @@
         android:layout_height="wrap_content"
         android:text="Start"
         android:id="@+id/controllerButton"
-        android:layout_alignBottom="@+id/imageView"
+        android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
         android:textSize="20sp"
         android:paddingLeft="50dp"
@@ -54,12 +56,14 @@
         android:onClick="controlTimer" />
 
     <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
         android:id="@+id/imageView2"
-        android:layout_below="@+id/timerSeekBar"
+        android:paddingLeft="100dp"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/timerTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/stop"
+        android:src="@drawable/snooze"
         android:visibility="invisible" />
 </RelativeLayout>

@@ -18,7 +18,8 @@
         <activity android:name=".GameActivity" />
         <activity android:name=".AlarmActivity" />
         <activity android:name=".HistoryActivity" />
-        <activity android:name=".CategoryActivity"></activity>
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".ChatActivity"></activity>
     </application>
 
 </manifest>

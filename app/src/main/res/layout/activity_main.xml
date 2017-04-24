@@ -34,22 +34,21 @@
             android:layout_height="150px"
             android:layout_marginLeft="30px"
             android:id="@+id/game_button"
-            android:background="@drawable/buttonxml"/>
+            android:background="@drawable/gamemode"/>
         <ImageButton
             android:layout_width="150px"
             android:layout_height="150px"
-            android:layout_marginLeft="40px"
-            android:layout_marginRight="40px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
             android:layout_gravity="center_horizontal"
-
             android:id="@+id/alarm_button"
-            android:background="@drawable/buttonxml"/>
+            android:background="@drawable/alarmmode"/>
         <ImageButton
-            android:layout_width="150px"
-            android:layout_height="150px"
-            android:layout_marginRight="40px"
+            android:layout_width="157px"
+            android:layout_height="157px"
+            android:layout_marginRight="30px"
             android:id="@+id/history_button"
-            android:background="@drawable/buttonxml"/>
+            android:background="@drawable/history"/>
     </LinearLayout>
 
 </RelativeLayout>
