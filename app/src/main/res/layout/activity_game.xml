@@ -4,11 +4,6 @@
     android:id="@+id/activity_game"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.berkeley.zouxuan.tripbuddy.GameActivity"
     android:background="@drawable/back_blur">
 
     <LinearLayout
@@ -19,7 +14,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
+            android:paddingTop="40dp"
             android:paddingLeft="120dp"
             android:paddingRight="40dp"
             android:id="@+id/game_title"

@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_history" android:icon="@android:drawable/ic_menu_camera"
+        <item android:id="@+id/nav_history" android:icon="@drawable/ic_history_black_24dp"
             android:title="History" />
-        <item android:id="@+id/nav_game" android:icon="@android:drawable/ic_menu_gallery"
+        <item android:id="@+id/nav_game" android:icon="@drawable/ic_game_black_24dp"
             android:title="Game" />
-        <item android:id="@+id/nav_alarm" android:icon="@android:drawable/ic_menu_slideshow"
+        <item android:id="@+id/nav_alarm" android:icon="@drawable/ic_alarm_black_24dp"
             android:title="Alarm" />
-        <item android:id="@+id/nav_setting" android:icon="@android:drawable/ic_menu_manage"
+        <item android:id="@+id/nav_setting" android:icon="@drawable/ic_settings_black_24dp"
             android:title="Setting" />
     </group>
 
     <item android:title="Communicate">
         <menu>
-            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
+            <item android:id="@+id/nav_share" android:icon="@drawable/ic_share_black_24dp"
                 android:title="Share" />
-            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
+            <item android:id="@+id/nav_send" android:icon="@drawable/ic_event_note_black_24dp"
                 android:title="Help" />
         </menu>
     </item>

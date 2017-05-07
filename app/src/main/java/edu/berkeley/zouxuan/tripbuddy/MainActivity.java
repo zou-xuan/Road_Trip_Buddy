@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Say your command", Snackbar.LENGTH_SHORT)
                         .setAction("Action", null).show();
             }
         });
@@ -58,15 +58,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
 
-        //How to change elements in the header programatically
-        View headerView = navigationView.getHeaderView(0);
-        TextView emailText = (TextView) headerView.findViewById(R.id.email);
-        emailText.setText("newemail@email.com");
-
         navigationView.setNavigationItemSelectedListener(this);
-
     }
-
 
 
     @Override
