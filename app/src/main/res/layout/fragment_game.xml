@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.berkeley.zouxuan.tripbuddy.GameFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLinear">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="120dp"
+            android:paddingRight="40dp"
+            android:id="@+id/game_title"
+            android:src="@drawable/game"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="250px"
+        android:paddingLeft="80px"
+        android:layout_below="@id/topLinear"
+        android:id="@+id/midLinear">
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:id="@+id/game_category"
+            android:background="@drawable/category"/>
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/game_rhythm"
+            android:background="@drawable/rhyme"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="80px"
+        android:layout_below="@id/midLinear">
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:id="@+id/game_knowledge"
+            android:background="@drawable/mc"/>
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/game_more"
+            android:background="@drawable/more"/>
+    </LinearLayout>
+
+</RelativeLayout>
