@@ -50,8 +50,8 @@ public class MainFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
 
-        titleview=(ImageView)rootView.findViewById(R.id.titleview);
-        titleview.setImageResource(R.drawable.newtitle);
+//        titleview=(ImageView)rootView.findViewById(R.id.titleview);
+//        titleview.setImageResource(R.drawable.history);
 
         mRecyclerView = (RecyclerView) rootView.findViewById(R.id.recycle_view);
         mRecyclerView.setHasFixedSize(true);
