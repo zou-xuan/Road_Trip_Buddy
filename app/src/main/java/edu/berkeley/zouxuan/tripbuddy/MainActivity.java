@@ -1,8 +1,11 @@
 package edu.berkeley.zouxuan.tripbuddy;
 
+import android.os.SystemClock;
+import android.speech.SpeechRecognizer;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,6 +19,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.github.zagum.speechrecognitionview.RecognitionProgressView;
+
+import java.util.concurrent.TimeUnit;
+
 public class MainActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener{
 
     private ImageView titleview;
@@ -27,11 +34,14 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SystemClock.sleep(TimeUnit.SECONDS.toMillis(1));
+        setTheme(R.style.AppTheme_NoActionBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-        MainFragment fragment = new MainFragment();
+
+        final MainFragment fragment = new MainFragment();
         android.support.v4.app.FragmentTransaction fragmentTransaction =
                 getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, fragment);
@@ -44,8 +54,9 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Say your command", Snackbar.LENGTH_SHORT)
-                        .setAction("Action", null).show();
+//                Snackbar.make(view, "Say your command", Snackbar.LENGTH_SHORT)
+//                        .setAction("Action", null).show();
+//                fragment.callByMain();
             }
         });
 
@@ -59,6 +70,20 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         navigationView = (NavigationView) findViewById(R.id.nav_view);
 
         navigationView.setNavigationItemSelectedListener(this);
+
+//        RecognitionProgressView recognitionProgressView = (RecognitionProgressView) findViewById(R.id.recognition_view);
+//        int[] colors = {
+//                ContextCompat.getColor(this, R.color.color1),
+//                ContextCompat.getColor(this, R.color.color2),
+//                ContextCompat.getColor(this, R.color.color3),
+//                ContextCompat.getColor(this, R.color.color4),
+//                ContextCompat.getColor(this, R.color.color5)
+//        };
+//        int[] heights = {60, 76, 58, 80, 55};
+//        recognitionProgressView.setBarMaxHeightsInDp(heights);
+//        recognitionProgressView.setColors(colors);
+//        recognitionProgressView.play();
+
     }
 
 

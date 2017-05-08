@@ -12,7 +12,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/timerSeekBar"
-        android:paddingTop="60dp"
+        android:paddingTop="70dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -38,20 +38,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="70sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start"
-        android:id="@+id/controllerButton"
-        android:layout_below="@id/imageView"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        />
-        <!--android:onClick="controlTimer" />-->
+    <!--android:onClick="controlTimer" />-->
 
     <ImageView
         android:layout_width="500dp"
@@ -64,4 +51,19 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/snooze"
         android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:id="@+id/controllerButton"
+        android:textSize="20sp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
