@@ -62,7 +62,7 @@ public class MainFragment extends Fragment {
 
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(getActivity());
 
-         recognitionProgressView = (RecognitionProgressView) rootView.findViewById(R.id.recognition_view);
+        recognitionProgressView = (RecognitionProgressView) rootView.findViewById(R.id.recognition_view);
         recognitionProgressView.setRecognitionListener(new RecognitionListenerAdapter() {
             @Override
             public void onResults(Bundle results) {
@@ -149,8 +149,8 @@ public class MainFragment extends Fragment {
 
     private ArrayList<HistoryData> getDataSet() {
         ArrayList<HistoryData> list = new ArrayList<>();
-        list.add(new HistoryData(R.drawable.game_icon, "Game Score", "You got a score of 5 in nba team name category."));
-        list.add(new HistoryData(R.drawable.alarm_icon, "Alarm Reaction", "Your reaction time is 10 seconds. You need a rest. :("));
+        list.add(new HistoryData(R.drawable.game_icon, "Game Score", "You got a score of 3 in nba team name category."));
+        list.add(new HistoryData(R.drawable.alarm_icon2, "Alarm Reaction", "Your reaction time is 10 seconds. You need a rest. :("));
         list.add(new HistoryData(R.drawable.game_icon, "Game Score", "You beat road trip game in multiple choice game."));
         return list;
     }

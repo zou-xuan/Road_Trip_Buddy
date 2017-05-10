@@ -16,8 +16,8 @@
             android:src="@drawable/history"
 
 
-            android:paddingLeft="10dp"
-            android:paddingTop="68dp" />
+            android:paddingLeft="14dp"
+            android:paddingTop="70dp" />
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
